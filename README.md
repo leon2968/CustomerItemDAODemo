@@ -1,13 +1,14 @@
 # CustomerItemDAODemo
 A DAO demo
 
-### Database Tables:
+### Create Database Tables:
 Customer - id(int), email(varchar2), fname(varchar2), lname(varchar2).
 
 Item - id(int), name(varchar2), price(Number(4,2)).
 
 ### Create models for each table.
 Customer.java
+
 Item.java
 
 ### Create DAOs with the following methods:
