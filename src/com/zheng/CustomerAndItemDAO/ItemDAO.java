@@ -24,7 +24,7 @@ public class ItemDAO extends AbsConnectionDB implements ItemDAOI {
 			connectDB();
 			ps = conn.prepareStatement(ItemSQL.GET_ALL_ITEMS.getQuery());
 			rs = ps.executeQuery();
-			itemList = new ArrayList<>();
+			itemList.clear();
 			while(rs.next()) {
 				Item tempItem = new Item();
 				tempItem.setId(rs.getInt(1));
@@ -56,6 +56,7 @@ public class ItemDAO extends AbsConnectionDB implements ItemDAOI {
 			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
+			System.out.println ("Adding " + item + " failed.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

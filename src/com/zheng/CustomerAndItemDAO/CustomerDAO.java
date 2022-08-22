@@ -46,7 +46,7 @@ public class CustomerDAO extends AbsConnectionDB implements CustomerDAOI{
 			ps.setInt(1, c.getId());
 			ps.setString(2, c.getEmail());
 			ps.setString(3, c.getFname());
-			ps.setString(4, c.getFname());
+			ps.setString(4, c.getLname());
 			ps.executeUpdate();
 			System.out.println (c + " is added to the database.");
 			closeConnection();
