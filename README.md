@@ -33,5 +33,5 @@ addItem(Item i) - Adds an item with given information.
 removeItemById(int id) - Removes an item with the given id.
 
 ### Notes
-1. This is for learning purpose only. Feel free to use and test it, but please do not submite the codes as your own work. 
-2. There is no interaction between customer and user at this stage. I may or may not implement more features in this program.
+1. This is for learning purpose only. Feel free to use and test it, but please do not submit the codes as your own work. 
+2. There is no interaction between Customer and Item at this stage. I may or may not implement more features in this program.
